@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CONSULTE-ME</h1>
+            <nav>
+                <ul>
+                    <li><a href="../CON_CEP/con_cep.html">CEP</a></li>
+                    <li><a href="../CON_END/index.html">ENDEREÇO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2>BUSCAR CEP PELO ENDEREÇO</h2>
+        <form id="cepForm">
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="">Selecione o estado</option>
+                <!-- Estados serão preenchidos pelo JavaScript -->
+            </select>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" required>
+            <button type="submit">Consultar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
